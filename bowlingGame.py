@@ -14,7 +14,7 @@ class BowlingGame():
         frameIndex = 0
         for frame in range(10):
             if self.isStrike(frameIndex): 
-                score = score + 10 + self.strikeBonus(frameIndex)
+                score = score + 11 + self.strikeBonus(frameIndex)
                 frameIndex = frameIndex + 1
             elif self.isSpare(frameIndex):
                 score = score + 10 + self.spareBonus(frameIndex)
